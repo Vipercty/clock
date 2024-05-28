@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lamp.css">
+</head>
+<body>
+    <div class="hero">
+        
+        <nav>
+            <img src="messi4.jpg" class="menu">
+            <div class="logo">
+                Lighten
+            </div>
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Affordable</a></li>
+                <li><a href="">Brightest</a></li>
+            </ul>
+            <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+        </nav>
+        <div class="lamp-container">
+            <img src="lamp.png" class="lamp">
+            <img src="light.png" class="light" id="light">
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById("btn");
+        function togglebtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.hero{
+    background-color: #1d2026;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8px;
+
+}
+nav .menu{
+    width: 115px;
+    align-self: flex-start;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+nav .logo{
+    width: 100px;
+    font-size: 40px;
+    cursor: pointer;
+    align-self: flex-start;
+    color: purple;
+    text-shadow: yellow;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+button {
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+
+}
+button span{
+    display: block;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-color: #999;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+.lamp-container{
+    position: absolute;
+    top: -90px;
+    left: 22%;
+    width: 200px;
+
+}
+.lamp{
+    width: 100%;
+    
+}
+.light{
+    top: 97%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    height: 305px;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+.active{
+    background: yellow;
+
+}
+.active span{
+    background: white;
+    margin-left: 31px;
+    
+}
+.on{
+    opacity: 1;
+}
